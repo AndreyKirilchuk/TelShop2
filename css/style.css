@@ -1,0 +1,379 @@
+body{
+    margin:0px;
+    background:#1C1B25;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+@font-face {
+    font-family:'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(../fonts/Roboto-Black.ttf);
+}
+*{
+    font-family: 'Roboto-Regular';
+}
+
+@media (max-width:1440px) {
+    .container{
+        width: 1360px;
+    }
+}
+
+@media (max-width:1360px) {
+    .container{
+        width: 1200px;
+    }
+}
+
+@media (max-width:1200px) {
+    .container{
+        width: 480px;
+    }
+}
+@media (max-width:480px) {
+    .container{
+        width: 300px;
+    }
+}
+
+@media (max-width:300px) {
+    .container{
+        width: none;
+    }
+}
+a{
+    text-decoration: none;
+}
+.header-fon{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #262D35;
+    display:flex;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color:rgb(255, 255, 255);
+    font-size:25px;
+    font-family: 'Roboto-Black';
+    font-weight: 400;
+    line-height: 80px;
+    text-decoration: underline #4BC586;;
+}
+nav{
+    color:#ffffff;
+    width: 160px;
+    height: 35px;
+    margin-top:20px;
+    border-radius: 5px;
+    background:#4BC586;
+    transition: 0.2s;
+    text-align: center;
+    line-height: 35px;
+    font-size:20px;
+    border:1px solid #4BC586;
+}
+nav:hover{
+    background:none;
+}
+.menu{
+    background:#1C1B25;
+    min-height: 1100px;
+    height:100vh;
+    position: absolute;
+    transition: 0.3s;
+    width:100%;
+    display: none;
+}
+
+.menu.active{
+    display: block;
+}
+.cart_container{
+    height: 100vh;
+}
+
+
+
+main{
+    margin-top:50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    height: auto;
+}
+
+.cart_wrapper{
+    margin-top:50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background-color: #1C1B25;
+}
+aside{
+    width: 350px;
+    height: 790px;
+    border-radius: 10px;
+    background-color: #262D35;
+    text-align:center;
+    color:white;
+    margin-bottom: 15px;
+}
+
+.search-box{
+    width: 1050px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #262D35;
+    margin: 0px 15px;
+    color:white;
+    padding: 10px;
+    font-size:18px;
+}
+select{
+    border:none;
+    background-color: #262D35;
+    color:none;
+    color:#4BC586;
+    outline: none;
+    padding:5px;
+    font-size:14px;
+}
+
+.filter-container{
+    text-align:left;
+    font-size:18px;
+    margin-left:25px;
+}
+
+.filter-container .input-string{
+    width: 290px;
+    height: 20px;
+    background-color: #262D35;
+    border:none;
+    border-bottom: 1px solid #4BC586;
+    margin:15px 0px;
+    align-items:end;
+    color:white;
+    outline: none;
+    font-size:15px;
+    padding: 5px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    margin:auto;
+}
+
+section{
+    width: 1080px;
+}
+.button_accept{
+    background-color: #4BC586;
+    border: 1px solid #4BC586;
+    border-radius: 2px;
+    margin-top:15px;
+    color:White;
+    font-size:18px;
+    height: 35px;
+    transition: 0.3s;
+}
+.button_accept:hover{
+    background-color:  #262D35;
+}
+.button_reset{
+    color:White;
+    background-color: #262D35;
+    border: 1px solid #4BC586;
+    border-radius: 2px;
+    margin-top:15px;
+    font-size:18px;
+    height: 35px;
+    transition: 0.3s;
+}
+.button_reset:hover{
+    background-color: #4BC586;
+}
+
+.card_container{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1200px) {
+    .card_container{
+        flex-direction: column;
+    }
+}
+.card{
+    width: 240px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: 0.3s;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.card_inner{
+    width: 200px;
+    height: 350px;
+    margin:auto;
+    color:#262D35;
+    word-wrap: break-word;
+    font-size:16px;
+    text-align: center;
+}
+.card_inner img{
+    margin: 20px 0px;
+}
+.card_inner span{
+    color:#4BC586;
+    font-weight: 600;
+    font-size:22px;
+}
+
+.card_inner .fullprice{
+    color:black;
+}
+.button_container{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.ButtonTovar{
+    background-color: #262D35;
+    border: 1px solid #262D35;
+    border-radius: 2px;
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    height: 40px;
+    transition: 0.3s;
+    width: 100%;
+    font-size:18px;
+    border-radius: 5px;
+    flex:end;
+}
+.ButtonTovar:hover{
+    background-color:  #ffffff;
+    color:#262D35;
+}
+
+.card_basket{
+    width: 100%;
+    height: 200px;
+    margin-top:30px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.cart_container{
+    width: 73%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tovars_result{
+    width: 25%;
+    height: 260px;
+    background-color: #262D35;
+    border-radius: 10px;
+    color:white;
+    text-align: center;
+}
+
+.tovars_result nav{
+    width: 84%;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom: 15px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.result_num{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin:auto;
+    margin-top:40px;
+    text-align: left;
+}
+
+.tovar{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    height: 240px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom:25px;
+}
+
+.tovar nav:hover{
+    color:black;
+}
+
+.tovarinfo{
+    display: flex;
+    margin-right: 5px;
+}
+
+.tovarname{
+    margin-left:15px;
+}
+
+.tovarname span{
+    color:#ababab;
+}
+.tovar_counter{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #262D35;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size:25px;
+    margin-bottom: 5px;
+}
+
+.tovardelete{
+    margin-right: 15px;
+}
+
+.tovardelete .ButtonTovar{
+    margin-top:107px;
+    height: 60px;
+}
+
+.tovar-btn{
+    background-color: white;
+    font-size:25px;
+    border:none;
+}
+.card_inner img{
+    height: 180px;
+}
+.card_text{
+    width:100%;
+    height: 40px;
+}

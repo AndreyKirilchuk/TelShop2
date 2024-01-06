@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TelShop</title>
+</head>
+<body>
+    <!-- Корзина -->
+    <div class="menu" id="menu">
+        <div class="header-fon">
+            <div class="container">
+                <header>
+                    <div class="logo">
+                            TelShop
+                    </div>
+                    <nav onclick="toggleMenu()">
+                        На главную
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cart_wrapper">
+                <div class="cart_container" id="selectedtovars">
+    
+                </div>
+                <div class="tovars_result">
+                    <h3>Условия заказа</h3>
+                    <div class="result_num">
+                        <div>
+                            Кол-во товаров:<br>
+                            Общий расход:
+                        </div>
+                        <div>
+                            <span id="kol-vo"></span><br>
+                            <span id="summ"></span>
+                        </div>
+                    </div>
+                    <nav onclick="deleteTovars()">
+                        Очистить корзину
+                    </nav>
+                    <nav>
+                        Купить
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Главная -->
+    <div class="header-fon">
+        <div class="container">
+                <header>
+                    <div class="logo">
+                        TelShop
+                    </div>
+                    <nav onclick="toggleMenu()">
+                        В корзину<span id="numTovars"></span>
+                    </nav>
+            </header>
+        </div>
+    </div>
+    <div class="container">
+        <main>
+            <aside>
+                <h2>Фильтры</h2>
+                <div class="filter-container">
+                    <input type="text" placeholder="Поиск..." class="input-string" id="search">
+                    <span>По цене:</span>
+                    <input type="number" placeholder="от" class="input-string" id="minPrice"><br>
+                    <input type="number" placeholder="до" class="input-string" id="maxPrice"><br>
+                    <span>По оперативной памяти:</span>
+                    <input type="number" placeholder="от" class="input-string" id="minRAM"><br>
+                    <input type="number" placeholder="до" class="input-string" id="maxRAM"><br>
+                    <span>По встроенной памяти:</span>
+                    <input type="number" placeholder="от" class="input-string" id="minMemory"><br>
+                    <input type="number" placeholder="до" class="input-string" id="maxMemory"><br>
+                    <input type="checkbox" class="checkbox" id="DEXP" checked>DEXP<br>
+                    <input type="checkbox" class="checkbox" id="POCO" checked>POCO<br>
+                    <input type="checkbox" class="checkbox" id="Samsung" checked>Samsung<br>
+                    <br>
+                    <input type="checkbox" class="checkbox" id="discount">Только со скидкой
+                </div>
+                <div class="btn-container">
+                    <button class="button_accept" id="accept">Применить</button>
+                    <button class="button_reset" id="reset">Сбросить</button>
+                </div>
+            </aside>
+            <section>
+                <div class="search-box">
+                    Метод:
+                    <select name="" id="selectedSort">
+                        <option selected disabled>Сортировка</option>
+                        <option value="0">По цене (Возрастание)</option>
+                        <option value="1">По цене (Убываниe)</option>
+                        <option value="2">По дате (Возрастание)</option>
+                        <option value="3">По дате (Убываниe)</option>
+                    </select><br>
+                    Товаров в корзине: <span id="kolvo_main"></span>
+                </div>
+                <div class="card_container" id="card_list">
+                 
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
