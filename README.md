@@ -1,5 +1,5 @@
 #TelShop2
 
-Задание от WorldSkills, которое я успешно выполнил.
+Задание на WorldSkills
 
 Можно посмотреть на сайте -> http://z611.pautinaweb.ru/telshop2/
